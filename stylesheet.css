@@ -1,0 +1,44 @@
+* {
+    background-color: #1b1b1b;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    width: min(800px, 40%);
+    height: 100vh;
+    background-size: cover;
+    background-image: url(assets/beazy-toX2sYnycCw-unsplash.jpg);
+    position: absolute;
+
+}
+
+.titlesection {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 120px;
+    max-height: fit-content;
+}
+
+.title {
+    font-family: "Monsterrat", sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.bgimage {
+
+}
+
+.caption {
+    position: absolute;
+}
+.unsplash {
+    color: white;
+    right: 600px;
+}
