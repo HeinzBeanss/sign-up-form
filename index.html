@@ -8,23 +8,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+
     <title>Sign-up Form</title>
 </head>
 <body>
     <div class="leftside">
         
-
-        
         <div class="titlesection">
             <img src="assets/odin-lined.png" alt="the odin logo" class="logo">
-            <h1 class="title">SOMNIUM</h1>
+            <h1 class="title">ODIN</h1>
         </div>
 
         <p class="caption">Photo by Beazy on <a class="unsplash" href="https://unsplash.com/photos/toX2sYnycCw">Unsplash</a></p>
-
-        <div class="bgimage"></div>
     </div>
 
-    <div class="rightside"></div>
+    <div class="rightside">
+        <p id="para1">This isn't a real online service I'm afraid. This is, in fact, just placeholder text to take up space on the page for the sake of how an example layout would look. Anyway. </p>
+        <p id="para2">Sign up now to get started!</p>
+        <p id="para3">You <i>know</i> you want to.</p>
+
+        <div class="formcontainer">
+            <p class="formtitle">Let's do this!</p>  
+            <form action="example.com/path" method="post">
+                
+                <div class="row">
+                    <div class="textboxblock">
+                        <label for="firstName">FIRST NAME</label>
+                        <input class="textbox" type="text" name="firstName" placeholder="Thor" required>
+                    </div>
+
+                    <div class="textboxblock">
+                        <label for="lastName">LAST NAME</label>
+                        <input class="textbox" type="text" name="lastName" placeholder="Odinson" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="textboxblock">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input class="textbox" type="email" name="email" placeholder="thorodinson@gmail.com" required>
+                    </div>
+
+                    <div class="textboxblock">
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input class="textbox" type="tel" name="phonenumber"    >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="textboxblock">
+                        <label for="password">PASSWORD</label>
+                        <input class="textbox" type="password" name="password" required>
+                    </div>
+
+                    <div class="textboxblock">
+                        <label for="confirmpassword">CONFIRM PASSWORD</label>
+                        <input class="textbox" type="password" name="confirmpassword" required>
+                    </div>
+                </div>
+        </div>
+
+        <button>Create Account</button>
+
+            </form>
+
+        <p id="bottomtext">Already have an account? <a class="login">Log in</a></p>
+    </div>
 </body>
 </html>
