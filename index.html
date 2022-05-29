@@ -30,7 +30,7 @@
 
         <div class="formcontainer">
             <p class="formtitle">Let's do this!</p>  
-            <form action="example.com/path" method="post">
+            <form action="" method="post">
                 
                 <div class="row">
                     <div class="textboxblock">
@@ -59,14 +59,16 @@
                 <div class="row">
                     <div class="textboxblock">
                         <label for="password">PASSWORD</label>
-                        <input class="textbox" type="password" name="password" required>
+                        <input id="password" class="textbox" title="Must contain one capital letter, lowercase letter, number and must be between 8 and 32 characters in length." placeholder="Example123" type="password" name="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,32}$" onchange="verify()" required>
                     </div>
 
                     <div class="textboxblock">
                         <label for="confirmpassword">CONFIRM PASSWORD</label>
-                        <input class="textbox" type="password" name="confirmpassword" required>
+                        <input id="passwordconfirm" class="textbox" placeholder="Example123" type="password" name="confirmpassword" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,32}$" onchange="verify()" required>
                     </div>
+
                 </div>
+                <div class="match"></div>
         </div>
 
         <button>Create Account</button>
@@ -76,4 +78,6 @@
         <p id="bottomtext">Already have an account? <a class="login">Log in</a></p>
     </div>
 </body>
+
+<script src="javascript.js"></script>
 </html>
